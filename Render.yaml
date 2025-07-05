@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: Morvaridpodcastbot
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: "python bot.py"
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: CHAT_ID
+        sync: false
